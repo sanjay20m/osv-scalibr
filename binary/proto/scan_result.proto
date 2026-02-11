@@ -796,6 +796,7 @@ message SecretData {
     CircleCIProjectToken circleci_project_token = 68;
     SquarePersonalAccessToken square_personal_access_token = 69;
     SquareOAuthApplicationSecret square_oauth_application_secret = 70;
+    DiscordBotToken discord_bot_token = 71;
   }
 
   message GCPSAK {
@@ -1109,6 +1110,10 @@ message SecretData {
 
   message PaystackSecretKey {
     string key = 1;
+  }
+  
+  message DiscordBotToken {
+  string token = 1;
   }
 
   message TelegramBotToken {
